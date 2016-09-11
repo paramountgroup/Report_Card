@@ -22,8 +22,9 @@ package us.theparamountgroup.reportcard;
 
 public class StudentGrades {
 
+
     // Name of the student (e.g. Bob Ingram, Elon Musk, Sebastian Thrun)
-    private String studentName;
+  //  private String studentName;
 
     // Name of the letter grade in the class (e.g. A,B,C,D,F)
     private String courseGrade;
@@ -31,7 +32,7 @@ public class StudentGrades {
     // Subject (e.g. Android Basics Nanodegree, Front End Web Developer, Google Analytics)
     private String subject;
     // gpa ( the calculated GPA based on course grades provided)
-    private double gpa;
+    private int gpa;
 
     /*
     * Create a new StudentGrades object.
@@ -40,7 +41,7 @@ public class StudentGrades {
     * @param cLetterGrade is the letter of the grade received (e.g. A,B,C,D,F)
     * @param cgpa is the double calculated value of GPA
     * */
-    public StudentGrades(String cSubject, String cLetterGrade, double cgpa)
+    public void StudentGrades(String cSubject, String cLetterGrade, int cgpa)
     {
         subject = cSubject;
         courseGrade = cLetterGrade;
@@ -64,7 +65,7 @@ public class StudentGrades {
     /**
      * Get the gpa
      */
-    public double getGpa() {
+    public int getGpa() {
         return gpa;
     }
 
@@ -89,4 +90,5 @@ public class StudentGrades {
     DecimalFormat formatter = new DecimalFormat("0.##");
     System.out.println( formatter.format(GPA));
     */
+
 }
